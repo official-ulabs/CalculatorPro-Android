@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    android:background="@color/colorBackground"
+    tools:showIn="@layout/activity_main">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:stretchColumns="*"
+        android:id="@+id/calculateArea"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/acBtn"
+                android:background="@color/colorLightButtons"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/ac"
+                    android:textAllCaps="true"
+                    android:padding="18dp"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorBackground"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/negativeBtn"
+                android:background="@color/colorLightButtons"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="+ -"
+                    android:textAllCaps="true"
+                    android:padding="18dp"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorBackground"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:background="@color/colorLightButtons"
+                android:id="@+id/percentageBtn"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="  %  "
+                    android:textAllCaps="true"
+                    android:padding="18dp"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorBackground"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dividerBtn"
+                android:background="@color/colorYellowButton"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="  /  "
+                    android:textAllCaps="true"
+                    android:padding="18dp"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:background="@color/colorDarkButtons"
+                android:id="@+id/sevenBtn"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="  7  "
+                    android:textAllCaps="true"
+                    android:padding="18dp"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:background="@color/colorDarkButtons"
+                android:id="@+id/eightBtn"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="  8  "
+                    android:textAllCaps="true"
+                    android:padding="18dp"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nineBtn"
+                android:background="@color/colorDarkButtons"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="  9  "
+                    android:textAllCaps="true"
+                    android:padding="18dp"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:background="@color/colorYellowButton"
+                android:id="@+id/multiplyBtn"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="  x  "
+                    android:padding="18dp"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/fourBtn"
+                android:background="@color/colorDarkButtons"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="  4  "
+                    android:textAllCaps="true"
+                    android:padding="18dp"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fiveBtn"
+                android:background="@color/colorDarkButtons"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="  5  "
+                    android:textAllCaps="true"
+                    android:padding="18dp"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:background="@color/colorDarkButtons"
+                android:id="@+id/sixBtn"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="  6  "
+                    android:textAllCaps="true"
+                    android:padding="18dp"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:background="@color/colorYellowButton"
+                android:id="@+id/subtractBtn"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="  -  "
+                    android:textAllCaps="true"
+                    android:padding="18dp"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:background="@color/colorDarkButtons"
+                android:id="@+id/oneBtn"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="  1  "
+                    android:textAllCaps="true"
+                    android:padding="18dp"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/twoBtn"
+                android:background="@color/colorDarkButtons"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="  2  "
+                    android:textAllCaps="true"
+                    android:padding="18dp"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/threeBtn"
+                android:background="@color/colorDarkButtons"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="  3  "
+                    android:textAllCaps="true"
+                    android:padding="18dp"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/dark_button"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:background="@color/colorYellowButton"
+                android:id="@+id/plusBtn"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="  +  "
+                    android:textAllCaps="true"
+                    android:padding="18dp"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:background="@color/colorDarkButtons"
+                android:id="@+id/zeroBtn"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="  0  "
+                    android:textAllCaps="true"
+                    android:padding="18dp"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:background="@color/colorDarkButtons"
+                android:id="@+id/ansBtn"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="  A  "
+                    android:textAllCaps="true"
+                    android:padding="18dp"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:background="@color/colorDarkButtons"
+                android:id="@+id/dotBtn"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="  .  "
+                    android:textAllCaps="true"
+                    android:padding="18dp"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/calculateBtn"
+                android:background="@color/colorYellowButton"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="  =  "
+                    android:textAllCaps="true"
+                    android:padding="18dp"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingEnd="25dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingStart="25dp"
+        android:layout_above="@id/calculateArea"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:text="0"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:id="@+id/holdText"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorWhite"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="80sp"
+            android:text="0"
+            android:id="@+id/answerText"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorWhite"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
